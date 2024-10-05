@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance for Growth Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Link to the stylesheet using Flask's url_for -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='images/Acharya.ai-Finance for growth.png') }}" alt="Chat Icon" class="avatar avatar-bot">
+            <h1>Acharaya.ai</h1>
+            <button id="theme-toggle-button" class="theme-toggle-button">
+                <img src="{{ url_for('static', filename='images/moon-icon.png') }}" alt="Toggle Theme" id="theme-icon" class="theme-icon">
+            </button>
+        </div>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window">
+            <!-- Messages will be dynamically added here -->
+        </div>
+        
+        <!-- Quick Replies Container -->
+        <div id="quick-replies-container" class="quick-replies-container"></div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask me anything...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file using Flask's url_for -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

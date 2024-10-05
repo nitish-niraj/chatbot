@@ -1,0 +1,8 @@
+Flask
+flask-cors
+langchain
+requests
+python-dotenv
+pdfplumber
+sentence-transformers
+chromadb
